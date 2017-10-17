@@ -1,0 +1,537 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		01105DD15577145A2E707F3D /* Pods_PLC_HMI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5A89DB78A19202E7EC17C10 /* Pods_PLC_HMI.framework */; };
+		9F8530A91F23503100AA26A5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F8530A81F23503100AA26A5 /* AppDelegate.swift */; };
+		9F8530AE1F23503100AA26A5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F8530AC1F23503100AA26A5 /* Main.storyboard */; };
+		9F8530B01F23503100AA26A5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F8530AF1F23503100AA26A5 /* Assets.xcassets */; };
+		9F8530B31F23503100AA26A5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F8530B11F23503100AA26A5 /* LaunchScreen.storyboard */; };
+		9F8530C11F23512600AA26A5 /* snap7.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9F8530BF1F23512600AA26A5 /* snap7.cpp */; };
+		9F8530FC1F23549F00AA26A5 /* s7_client.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9F8530EC1F23549F00AA26A5 /* s7_client.cpp */; };
+		9F8530FD1F23549F00AA26A5 /* s7_isotcp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9F8530EF1F23549F00AA26A5 /* s7_isotcp.cpp */; };
+		9F8530FE1F23549F00AA26A5 /* s7_micro_client.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9F8530F11F23549F00AA26A5 /* s7_micro_client.cpp */; };
+		9F8530FF1F23549F00AA26A5 /* s7_partner.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9F8530F31F23549F00AA26A5 /* s7_partner.cpp */; };
+		9F8531001F23549F00AA26A5 /* s7_peer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9F8530F51F23549F00AA26A5 /* s7_peer.cpp */; };
+		9F8531011F23549F00AA26A5 /* s7_server.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9F8530F71F23549F00AA26A5 /* s7_server.cpp */; };
+		9F8531021F23549F00AA26A5 /* s7_text.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9F8530F91F23549F00AA26A5 /* s7_text.cpp */; };
+		9F8531051F2354A900AA26A5 /* snap7_libmain.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9F8531031F2354A900AA26A5 /* snap7_libmain.cpp */; };
+		9F8531121F2354B100AA26A5 /* snap_msgsock.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9F8531061F2354B100AA26A5 /* snap_msgsock.cpp */; };
+		9F8531131F2354B100AA26A5 /* snap_sysutils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9F8531091F2354B100AA26A5 /* snap_sysutils.cpp */; };
+		9F8531141F2354B100AA26A5 /* snap_tcpsrvr.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9F85310B1F2354B100AA26A5 /* snap_tcpsrvr.cpp */; };
+		9F8531151F2354B100AA26A5 /* snap_threads.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9F85310D1F2354B100AA26A5 /* snap_threads.cpp */; };
+		9F8531171F23556C00AA26A5 /* S7Client.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F8531161F23556C00AA26A5 /* S7Client.swift */; };
+		9F8531191F23559C00AA26A5 /* String+S7Address.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F8531181F23559C00AA26A5 /* String+S7Address.swift */; };
+		9FF469041F86BDD000531D18 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF469031F86BDD000531D18 /* MainViewController.swift */; };
+		9FF469071F86C51000531D18 /* AddressTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF469061F86C51000531D18 /* AddressTableViewCell.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		92557EC07C822EB6E34656C1 /* Pods-PLC HMI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PLC HMI.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PLC HMI/Pods-PLC HMI.debug.xcconfig"; sourceTree = "<group>"; };
+		9F8530A51F23503100AA26A5 /* PLC HMI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "PLC HMI.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9F8530A81F23503100AA26A5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9F8530AD1F23503100AA26A5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9F8530AF1F23503100AA26A5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9F8530B21F23503100AA26A5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9F8530B41F23503100AA26A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9F8530BE1F23512500AA26A5 /* PLC HMI-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PLC HMI-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
+		9F8530BF1F23512600AA26A5 /* snap7.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = snap7.cpp; sourceTree = "<group>"; };
+		9F8530C01F23512600AA26A5 /* snap7.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = snap7.h; sourceTree = "<group>"; };
+		9F8530EC1F23549F00AA26A5 /* s7_client.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = s7_client.cpp; sourceTree = "<group>"; };
+		9F8530ED1F23549F00AA26A5 /* s7_client.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = s7_client.h; sourceTree = "<group>"; };
+		9F8530EE1F23549F00AA26A5 /* s7_firmware.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = s7_firmware.h; sourceTree = "<group>"; };
+		9F8530EF1F23549F00AA26A5 /* s7_isotcp.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = s7_isotcp.cpp; sourceTree = "<group>"; };
+		9F8530F01F23549F00AA26A5 /* s7_isotcp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = s7_isotcp.h; sourceTree = "<group>"; };
+		9F8530F11F23549F00AA26A5 /* s7_micro_client.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = s7_micro_client.cpp; sourceTree = "<group>"; };
+		9F8530F21F23549F00AA26A5 /* s7_micro_client.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = s7_micro_client.h; sourceTree = "<group>"; };
+		9F8530F31F23549F00AA26A5 /* s7_partner.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = s7_partner.cpp; sourceTree = "<group>"; };
+		9F8530F41F23549F00AA26A5 /* s7_partner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = s7_partner.h; sourceTree = "<group>"; };
+		9F8530F51F23549F00AA26A5 /* s7_peer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = s7_peer.cpp; sourceTree = "<group>"; };
+		9F8530F61F23549F00AA26A5 /* s7_peer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = s7_peer.h; sourceTree = "<group>"; };
+		9F8530F71F23549F00AA26A5 /* s7_server.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = s7_server.cpp; sourceTree = "<group>"; };
+		9F8530F81F23549F00AA26A5 /* s7_server.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = s7_server.h; sourceTree = "<group>"; };
+		9F8530F91F23549F00AA26A5 /* s7_text.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = s7_text.cpp; sourceTree = "<group>"; };
+		9F8530FA1F23549F00AA26A5 /* s7_text.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = s7_text.h; sourceTree = "<group>"; };
+		9F8530FB1F23549F00AA26A5 /* s7_types.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = s7_types.h; sourceTree = "<group>"; };
+		9F8531031F2354A900AA26A5 /* snap7_libmain.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = snap7_libmain.cpp; sourceTree = "<group>"; };
+		9F8531041F2354A900AA26A5 /* snap7_libmain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = snap7_libmain.h; sourceTree = "<group>"; };
+		9F8531061F2354B100AA26A5 /* snap_msgsock.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = snap_msgsock.cpp; sourceTree = "<group>"; };
+		9F8531071F2354B100AA26A5 /* snap_msgsock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = snap_msgsock.h; sourceTree = "<group>"; };
+		9F8531081F2354B100AA26A5 /* snap_platform.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = snap_platform.h; sourceTree = "<group>"; };
+		9F8531091F2354B100AA26A5 /* snap_sysutils.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = snap_sysutils.cpp; sourceTree = "<group>"; };
+		9F85310A1F2354B100AA26A5 /* snap_sysutils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = snap_sysutils.h; sourceTree = "<group>"; };
+		9F85310B1F2354B100AA26A5 /* snap_tcpsrvr.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = snap_tcpsrvr.cpp; sourceTree = "<group>"; };
+		9F85310C1F2354B100AA26A5 /* snap_tcpsrvr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = snap_tcpsrvr.h; sourceTree = "<group>"; };
+		9F85310D1F2354B100AA26A5 /* snap_threads.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = snap_threads.cpp; sourceTree = "<group>"; };
+		9F85310E1F2354B100AA26A5 /* snap_threads.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = snap_threads.h; sourceTree = "<group>"; };
+		9F85310F1F2354B100AA26A5 /* sol_threads.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sol_threads.h; sourceTree = "<group>"; };
+		9F8531101F2354B100AA26A5 /* unix_threads.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = unix_threads.h; sourceTree = "<group>"; };
+		9F8531111F2354B100AA26A5 /* win_threads.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = win_threads.h; sourceTree = "<group>"; };
+		9F8531161F23556C00AA26A5 /* S7Client.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = S7Client.swift; sourceTree = "<group>"; };
+		9F8531181F23559C00AA26A5 /* String+S7Address.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+S7Address.swift"; sourceTree = "<group>"; };
+		9FF469031F86BDD000531D18 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		9FF469061F86C51000531D18 /* AddressTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressTableViewCell.swift; sourceTree = "<group>"; };
+		A5A89DB78A19202E7EC17C10 /* Pods_PLC_HMI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PLC_HMI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F83760FF7D3F66FC62086BD5 /* Pods-PLC HMI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PLC HMI.release.xcconfig"; path = "Pods/Target Support Files/Pods-PLC HMI/Pods-PLC HMI.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9F8530A21F23503100AA26A5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				01105DD15577145A2E707F3D /* Pods_PLC_HMI.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4F0878B08D62A06C86BDE65D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				92557EC07C822EB6E34656C1 /* Pods-PLC HMI.debug.xcconfig */,
+				F83760FF7D3F66FC62086BD5 /* Pods-PLC HMI.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		9F85309C1F23503100AA26A5 = {
+			isa = PBXGroup;
+			children = (
+				9F8530BE1F23512500AA26A5 /* PLC HMI-Bridging-Header.h */,
+				9F8530BA1F23505200AA26A5 /* Libraries */,
+				9F8530A71F23503100AA26A5 /* PLC HMI */,
+				9F8530A61F23503100AA26A5 /* Products */,
+				4F0878B08D62A06C86BDE65D /* Pods */,
+				FE05583E5A97DFAFE1A20FEF /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		9F8530A61F23503100AA26A5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9F8530A51F23503100AA26A5 /* PLC HMI.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9F8530A71F23503100AA26A5 /* PLC HMI */ = {
+			isa = PBXGroup;
+			children = (
+				9FA776C01F96A79A000C4076 /* Cells */,
+				9FA776BF1F96A78C000C4076 /* Controllers */,
+				9F8530A81F23503100AA26A5 /* AppDelegate.swift */,
+				9F8530AC1F23503100AA26A5 /* Main.storyboard */,
+				9F8530AF1F23503100AA26A5 /* Assets.xcassets */,
+				9F8530B11F23503100AA26A5 /* LaunchScreen.storyboard */,
+				9F8530B41F23503100AA26A5 /* Info.plist */,
+			);
+			path = "PLC HMI";
+			sourceTree = "<group>";
+		};
+		9F8530BA1F23505200AA26A5 /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				9F8531181F23559C00AA26A5 /* String+S7Address.swift */,
+				9F8531161F23556C00AA26A5 /* S7Client.swift */,
+				9F8530BB1F23506300AA26A5 /* Snap7 */,
+			);
+			name = Libraries;
+			sourceTree = "<group>";
+		};
+		9F8530BB1F23506300AA26A5 /* Snap7 */ = {
+			isa = PBXGroup;
+			children = (
+				9F8530BF1F23512600AA26A5 /* snap7.cpp */,
+				9F8530C01F23512600AA26A5 /* snap7.h */,
+				9F8530EC1F23549F00AA26A5 /* s7_client.cpp */,
+				9F8530ED1F23549F00AA26A5 /* s7_client.h */,
+				9F8530EE1F23549F00AA26A5 /* s7_firmware.h */,
+				9F8530EF1F23549F00AA26A5 /* s7_isotcp.cpp */,
+				9F8530F01F23549F00AA26A5 /* s7_isotcp.h */,
+				9F8530F11F23549F00AA26A5 /* s7_micro_client.cpp */,
+				9F8530F21F23549F00AA26A5 /* s7_micro_client.h */,
+				9F8530F31F23549F00AA26A5 /* s7_partner.cpp */,
+				9F8530F41F23549F00AA26A5 /* s7_partner.h */,
+				9F8530F51F23549F00AA26A5 /* s7_peer.cpp */,
+				9F8530F61F23549F00AA26A5 /* s7_peer.h */,
+				9F8530F71F23549F00AA26A5 /* s7_server.cpp */,
+				9F8530F81F23549F00AA26A5 /* s7_server.h */,
+				9F8530F91F23549F00AA26A5 /* s7_text.cpp */,
+				9F8530FA1F23549F00AA26A5 /* s7_text.h */,
+				9F8530FB1F23549F00AA26A5 /* s7_types.h */,
+				9F8531031F2354A900AA26A5 /* snap7_libmain.cpp */,
+				9F8531041F2354A900AA26A5 /* snap7_libmain.h */,
+				9F8531061F2354B100AA26A5 /* snap_msgsock.cpp */,
+				9F8531071F2354B100AA26A5 /* snap_msgsock.h */,
+				9F8531081F2354B100AA26A5 /* snap_platform.h */,
+				9F8531091F2354B100AA26A5 /* snap_sysutils.cpp */,
+				9F85310A1F2354B100AA26A5 /* snap_sysutils.h */,
+				9F85310B1F2354B100AA26A5 /* snap_tcpsrvr.cpp */,
+				9F85310C1F2354B100AA26A5 /* snap_tcpsrvr.h */,
+				9F85310D1F2354B100AA26A5 /* snap_threads.cpp */,
+				9F85310E1F2354B100AA26A5 /* snap_threads.h */,
+				9F85310F1F2354B100AA26A5 /* sol_threads.h */,
+				9F8531101F2354B100AA26A5 /* unix_threads.h */,
+				9F8531111F2354B100AA26A5 /* win_threads.h */,
+			);
+			name = Snap7;
+			sourceTree = "<group>";
+		};
+		9FA776BF1F96A78C000C4076 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				9FF469031F86BDD000531D18 /* MainViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		9FA776C01F96A79A000C4076 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				9FF469061F86C51000531D18 /* AddressTableViewCell.swift */,
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
+		FE05583E5A97DFAFE1A20FEF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A5A89DB78A19202E7EC17C10 /* Pods_PLC_HMI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9F8530A41F23503100AA26A5 /* PLC HMI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9F8530B71F23503100AA26A5 /* Build configuration list for PBXNativeTarget "PLC HMI" */;
+			buildPhases = (
+				4D8BC7FD6D49386F64031D15 /* [CP] Check Pods Manifest.lock */,
+				9F8530A11F23503100AA26A5 /* Sources */,
+				9F8530A21F23503100AA26A5 /* Frameworks */,
+				9F8530A31F23503100AA26A5 /* Resources */,
+				4C6860E1429B485233BB59D2 /* [CP] Embed Pods Frameworks */,
+				6D510F18EA01719B043FC767 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "PLC HMI";
+			productName = "PLC HMI";
+			productReference = 9F8530A51F23503100AA26A5 /* PLC HMI.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9F85309D1F23503100AA26A5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Encoded Street";
+				TargetAttributes = {
+					9F8530A41F23503100AA26A5 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = E8C46L5TFQ;
+						LastSwiftMigration = 0830;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 9F8530A01F23503100AA26A5 /* Build configuration list for PBXProject "PLC HMI" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9F85309C1F23503100AA26A5;
+			productRefGroup = 9F8530A61F23503100AA26A5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9F8530A41F23503100AA26A5 /* PLC HMI */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9F8530A31F23503100AA26A5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F8530B31F23503100AA26A5 /* LaunchScreen.storyboard in Resources */,
+				9F8530B01F23503100AA26A5 /* Assets.xcassets in Resources */,
+				9F8530AE1F23503100AA26A5 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4C6860E1429B485233BB59D2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-PLC HMI/Pods-PLC HMI-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/PureLayout/PureLayout.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PureLayout.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PLC HMI/Pods-PLC HMI-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4D8BC7FD6D49386F64031D15 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PLC HMI-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6D510F18EA01719B043FC767 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PLC HMI/Pods-PLC HMI-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9F8530A11F23503100AA26A5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F8531121F2354B100AA26A5 /* snap_msgsock.cpp in Sources */,
+				9F8531171F23556C00AA26A5 /* S7Client.swift in Sources */,
+				9F8531141F2354B100AA26A5 /* snap_tcpsrvr.cpp in Sources */,
+				9F8531151F2354B100AA26A5 /* snap_threads.cpp in Sources */,
+				9F8531001F23549F00AA26A5 /* s7_peer.cpp in Sources */,
+				9F8531191F23559C00AA26A5 /* String+S7Address.swift in Sources */,
+				9F8530C11F23512600AA26A5 /* snap7.cpp in Sources */,
+				9F8531051F2354A900AA26A5 /* snap7_libmain.cpp in Sources */,
+				9F8530FD1F23549F00AA26A5 /* s7_isotcp.cpp in Sources */,
+				9FF469071F86C51000531D18 /* AddressTableViewCell.swift in Sources */,
+				9F8530FE1F23549F00AA26A5 /* s7_micro_client.cpp in Sources */,
+				9F8530FC1F23549F00AA26A5 /* s7_client.cpp in Sources */,
+				9F8531011F23549F00AA26A5 /* s7_server.cpp in Sources */,
+				9F8530FF1F23549F00AA26A5 /* s7_partner.cpp in Sources */,
+				9F8531021F23549F00AA26A5 /* s7_text.cpp in Sources */,
+				9FF469041F86BDD000531D18 /* MainViewController.swift in Sources */,
+				9F8531131F2354B100AA26A5 /* snap_sysutils.cpp in Sources */,
+				9F8530A91F23503100AA26A5 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		9F8530AC1F23503100AA26A5 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9F8530AD1F23503100AA26A5 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9F8530B11F23503100AA26A5 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9F8530B21F23503100AA26A5 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9F8530B51F23503100AA26A5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9F8530B61F23503100AA26A5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9F8530B81F23503100AA26A5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 92557EC07C822EB6E34656C1 /* Pods-PLC HMI.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = E8C46L5TFQ;
+				INFOPLIST_FILE = "PLC HMI/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "ES.PLC-HMI";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "PLC HMI-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		9F8530B91F23503100AA26A5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F83760FF7D3F66FC62086BD5 /* Pods-PLC HMI.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = E8C46L5TFQ;
+				INFOPLIST_FILE = "PLC HMI/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "ES.PLC-HMI";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "PLC HMI-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9F8530A01F23503100AA26A5 /* Build configuration list for PBXProject "PLC HMI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9F8530B51F23503100AA26A5 /* Debug */,
+				9F8530B61F23503100AA26A5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9F8530B71F23503100AA26A5 /* Build configuration list for PBXNativeTarget "PLC HMI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9F8530B81F23503100AA26A5 /* Debug */,
+				9F8530B91F23503100AA26A5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9F85309D1F23503100AA26A5 /* Project object */;
+}

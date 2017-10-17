@@ -1,0 +1,6 @@
+framework module Pods_PLC_HMI {
+  umbrella header "Pods-PLC HMI-umbrella.h"
+
+  export *
+  module * { export * }
+}
