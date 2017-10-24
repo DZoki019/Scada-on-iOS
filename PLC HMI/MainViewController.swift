@@ -21,9 +21,9 @@ class MainViewController: UIViewController, UITableViewDataSource, UITableViewDe
     let kOutputCellReuseIdentifier = "kOutputCellReuseIdentifier"
     
     //// Data
-    var plcAddress = "192.168.0.1"
-    var inputAddress = "%M0.1"
-    var outputAddress = "%A0.1"
+    var plcAddress = "10.1.52.134"
+    var inputAddress = "M0.1"
+    var outputAddress = "A0.1"
     
     ////
     let client = S7Client()
@@ -54,7 +54,6 @@ class MainViewController: UIViewController, UITableViewDataSource, UITableViewDe
         self.switchButton.autoPinEdge(toSuperviewEdge: .left, withInset: 100)
         self.switchButton.autoAlignAxis(.horizontal, toSameAxisOf: self.lightImageView)
         self.switchButton.addTarget(self, action: #selector(switchButtonChangedState), for: .valueChanged)
-        self.switchButtonChangedState(switchButton: self.switchButton)
         
         self.view.addSubview(self.tableView)
         self.tableView.autoPinEdgesToSuperviewEdges(with: .zero, excludingEdge: .top)
@@ -101,7 +100,9 @@ class MainViewController: UIViewController, UITableViewDataSource, UITableViewDe
     }
     
     func switchButtonChangedState(switchButton : UISwitch) -> Void {
-        _ = self.client.write(inputAddress, value: switchButton.isOn, completion: nil)
+        _ = self.client.write(inputAddress, value: switchButton.isOn, completion: { (foo) in
+            print(foo)
+        })
     }
     
     // MARK: - Table View delegates
